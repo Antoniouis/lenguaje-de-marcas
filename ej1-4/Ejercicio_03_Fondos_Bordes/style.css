@@ -1,0 +1,8 @@
+.caja_blanca {
+  
+    background: white;
+      width: 300px;
+  border:1px solid rgb(0, 0, 0);
+  padding: 50px;
+  margin: 50px;
+}

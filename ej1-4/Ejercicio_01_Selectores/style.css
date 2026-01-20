@@ -1,0 +1,23 @@
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+line-height: 1.6;
+}
+
+.titulo-principal {
+text-align: center;
+color: #0056b3;
+font-size: 2.5rem;
+}
+
+.contenido {
+
+background-color: #fff;
+padding: 20px;
+
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(199, 196, 47, 0.1);
+}
+  
