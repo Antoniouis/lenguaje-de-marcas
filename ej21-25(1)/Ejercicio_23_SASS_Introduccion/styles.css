@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* 
+  Ejercicio 23: SASS Introducción
+*/
+.container {
+  background-color: blue;
+  color: white;
+}
+.container h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .btn {
+  padding: 10px 20px;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .btn:hover {
+  background: green;
+}/*# sourceMappingURL=styles.css.map */

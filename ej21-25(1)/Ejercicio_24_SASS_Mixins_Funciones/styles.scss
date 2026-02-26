@@ -1,0 +1,44 @@
+/* Ejercicio 24: Mixins */
+
+// 1. Define un @mixin para botones
+@mixin btn-structure {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: normal;
+}
+
+@mixin btn-theme ($color) {
+    background-color: $color;
+    &:hover{color:darken($color,10%)}
+}
+
+
+
+// 2. Define un @mixin para centrar elementos (flexbox)
+
+@mixin centrar (){
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #b31a1a;
+  margin: auto;
+    
+}
+
+// 3. Aplica los mixins a las clases .btn-success, .btn-danger, .box
+.btn-success{
+    @include btn-structure();
+    @include btn-theme(green)
+}
+.btn-danger{
+    @include btn-structure();
+    @include btn-theme(red)
+}
+
+.box{
+    @include centrar();
+    
+}
+

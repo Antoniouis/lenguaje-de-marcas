@@ -1,0 +1,16 @@
+.caja {
+width: 300px;
+padding: 20px;
+border: 10px solid #007bff;
+}
+
+.caja-content {
+box-sizing: content-box;
+background-color: #ffe0b2;
+align-self: center;
+}
+.caja-border {
+box-sizing: border-box;
+background-color: #c8e6c9;
+align-self: center;
+}
