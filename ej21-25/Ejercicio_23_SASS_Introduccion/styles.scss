@@ -1,0 +1,22 @@
+/* 
+  Ejercicio 23: SASS Introducción
+*/
+
+// 1. Define Variables ($color-principal, $fuente...)
+$colorAntonioLuis : blue;
+$fuente : Arial, Helvetica, sans-serif;
+$paddingboton :  10px 20px;
+
+// 2. Usa Nesting para dar estilo a la .container, h1, p y .btn
+.container {
+   background-color: $colorAntonioLuis;
+   color: white;
+   
+   h1 { font-family: $fuente }
+  .btn{
+    padding: $paddingboton;
+    background-color: black;
+    font-family: $fuente;
+    &:hover{background: green}
+}
+ }
