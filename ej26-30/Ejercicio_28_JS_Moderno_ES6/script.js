@@ -3,10 +3,9 @@
 const container = document.getElementById('resultado');
 
 // 1. Convierte esta función a Arrow Function
-// function saludar(nombre) {
-//    return 'Hola ' + nombre;
-// }
-
+const saludar = (nombre) => {
+    return `Hola ${nombre}`;
+};
 
 // 2. Dado el siguiente array de objetos:
 const usuarios = [
@@ -16,6 +15,8 @@ const usuarios = [
 ];
 
 // 3. Usa .filter() (con arrow function) para encontrar a los de rol 'Admin'
-
+const admins = usuarios.filter(usuario => usuario.rol === 'Admin');
 
 // 4. Renderiza la lista en el DOM usando Template Literals (``) y .map()
+const listaHTML = admins.map(u => `<li>${u.nombre}</li>`)
+container.innerHTML = listaHTML;

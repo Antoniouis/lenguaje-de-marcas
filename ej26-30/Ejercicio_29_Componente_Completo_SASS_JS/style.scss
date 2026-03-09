@@ -1,2 +1,31 @@
 // Define estilos para las tabs aquí
 // Usa Nesting y estados (&.active)
+.tab-btn {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+
+  &:hover {
+    background: #ddd;
+  }
+
+  &:active {
+    background: #ccc;
+  }
+
+  &.active {
+    background: #bbb;
+    font-weight: bold;
+  }
+}
+
+.content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+
+  &.active {
+    display: block;
+  }
+}

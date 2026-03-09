@@ -1,0 +1,25 @@
+.tab-btn {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+}
+.tab-btn:hover {
+  background: #ddd;
+}
+.tab-btn:active {
+  background: #ccc;
+}
+.tab-btn.active {
+  background: #bbb;
+  font-weight: bold;
+}
+
+.content {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.content.active {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
