@@ -6,8 +6,14 @@
         "start": "gulp"
     },
     "devDependencies": {
+        "browser-sync": "^3.0.4",
         "gulp": "^4.0.2",
         "gulp-sass": "^5.1.0",
-        "sass": "^1.70.0"
-    }
+        "sass": "^1.97.3"
+    },
+    "description": "",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs"
 }
