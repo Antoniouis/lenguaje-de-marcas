@@ -1,0 +1,41 @@
+// Mixin de sombra
+@mixin box-shadow($color: rgba(0,0,0,0.2)) {
+    box-shadow: 0 4px 10px $color;
+}
+
+// Estilos base
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+#news-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+// Tarjetas
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    @include box-shadow();
+
+    h2 {
+        margin-top: 0;
+    }
+}
+
+// Categorías dinámicas
+.category-tecnologia {
+    border-left: 5px solid blue;
+}
+
+.category-deportes {
+    border-left: 5px solid green;
+}
+
+.category-ciencia {
+    border-left: 5px solid purple;
+}

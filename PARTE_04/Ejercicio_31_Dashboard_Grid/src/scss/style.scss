@@ -1,0 +1,95 @@
+// Variables
+$primary: #2c3e50;
+$secondary: #34495e;
+$accent: #3498db;
+$text: #ecf0f1;
+$gap: 1rem;
+
+// Reset básico
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+// Layout principal
+.dashboard {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+  height: 100vh;
+
+  &.collapsed {
+    grid-template-columns: 80px 1fr;
+
+    .sidebar {
+      width: 80px;
+    }
+  }
+}
+
+// Sidebar
+.sidebar {
+  grid-area: sidebar;
+  background: $primary;
+  color: $text;
+  padding: $gap;
+
+  h2 {
+    margin-bottom: $gap;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      color: $text;
+      text-decoration: none;
+      margin: 0.5rem 0;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}
+
+// Header
+.header {
+  grid-area: header;
+  background: $secondary;
+  color: $text;
+  display: flex;
+  align-items: center;
+  padding: 0 $gap;
+
+  button {
+    margin-right: $gap;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+// Content
+.content {
+  grid-area: content;
+  padding: $gap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: $gap;
+
+  .card {
+    background: #fff;
+    padding: $gap;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+}

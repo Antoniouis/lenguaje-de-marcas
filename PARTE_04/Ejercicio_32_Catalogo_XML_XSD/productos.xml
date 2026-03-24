@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos>
+  <producto id="1">
+    <nombre>Portátil</nombre>
+    <precio>899.99</precio>
+    <descripcion>Portátil de alto rendimiento</descripcion>
+    <categoria>Tecnología</categoria>
+  </producto>
+
+  <producto id="2">
+    <nombre>Smartphone</nombre>
+    <precio>599.50</precio>
+    <descripcion>Teléfono inteligente</descripcion>
+    <categoria>Tecnología</categoria>
+  </producto>
+
+  <producto id="3">
+    <nombre>Auriculares</nombre>
+    <precio>79.99</precio>
+    <descripcion>Auriculares inalámbricos</descripcion>
+    <categoria>Audio</categoria>
+  </producto>
+
+  <producto id="4">
+    <nombre>Silla Gamer</nombre>
+    <precio>199.99</precio>
+    <descripcion>Silla ergonómica</descripcion>
+    <categoria>Muebles</categoria>
+  </producto>
+
+  <producto id="5">
+    <nombre>Monitor</nombre>
+    <precio>249.99</precio>
+    <descripcion>Monitor 24 pulgadas</descripcion>
+    <categoria>Tecnología</categoria>
+  </producto>
+</productos>

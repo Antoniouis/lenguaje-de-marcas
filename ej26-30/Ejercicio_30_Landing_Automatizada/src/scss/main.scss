@@ -11,6 +11,10 @@ $transition-speed: 0.3s;
 $burger-width: 25px;
 $burger-height: 3px;
 $burger-gap: 4px;
+
+title {
+  color: pink;
+}
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,6 +32,7 @@ body .navbar {
 }
 
 body .navbar .logo {
+  color: pink;
   font-size: 1.5rem;
   font-weight: bold;
 }

@@ -1,0 +1,48 @@
+
+$color-error: #e74c3c;
+$color-success: #2ecc71;
+$color-border: #ccc;
+
+.formulario {
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+
+  .campo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input {
+      padding: 8px;
+      border: 2px solid $color-border;
+      border-radius: 4px;
+      outline: none;
+      transition: 0.3s;
+
+      &.valido {
+        border-color: $color-success;
+      }
+
+      &.error {
+        border-color: $color-error;
+      }
+    }
+
+    .mensaje-error {
+      color: $color-error;
+      font-size: 12px;
+      display: none;
+    }
+   
+    &.mostrar-error {
+      .mensaje-error {
+        display: block;
+      }
+    }
+  }
+}

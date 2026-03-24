@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="feed.xsd">
+    
+    <item category="tecnologia">
+        <title>Nuevo framework JS en 2026</title>
+        <description>Se lanza un nuevo framework que promete revolucionar el desarrollo web.</description>
+        <pubDate>2026-03-20</pubDate>
+        <author>Juan Pérez</author>
+    </item>
+
+    <item category="deportes">
+        <title>Victoria histórica</title>
+        <description>El equipo local gana el campeonato tras 20 años.</description>
+        <pubDate>2026-03-18</pubDate>
+        <author>Ana Gómez</author>
+    </item>
+
+    <item category="ciencia">
+        <title>Descubrimiento espacial</title>
+        <description>Nuevos indicios de vida en un planeta lejano.</description>
+        <pubDate>2026-03-15</pubDate>
+        <author>Carlos Ruiz</author>
+    </item>
+
+</feed>

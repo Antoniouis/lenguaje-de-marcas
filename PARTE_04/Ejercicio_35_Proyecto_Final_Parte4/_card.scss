@@ -1,0 +1,26 @@
+@mixin box-shadow {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card {
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    @include box-shadow;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+}
+
+.category-fiction {
+    border-left: 5px solid blue;
+}
+
+.category-science {
+    border-left: 5px solid green;
+}
+
+.category-history {
+    border-left: 5px solid orange;
+}
